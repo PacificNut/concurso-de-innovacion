@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurso de Innovación - Pacific Nut</title>
+    <style>
+        :root {
+            --verde: #789f1d;
+            --cafe: #522315;
+            --crema: #fffdfa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--crema);
+            color: var(--cafe);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .navbar { background-color: white; padding: 1rem; text-align: center; border-bottom: 3px solid var(--verde); }
+        .logo { max-width: 220px; height: auto; }
+
+        /* 1. TÍTULO Y FECHAS (Compacto y elegante) */
+        header {
+            background-color: var(--cafe);
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+        header h1 { font-size: 2.5rem; margin: 0; letter-spacing: 2px; }
+        header p { font-size: 1.2rem; margin: 10px 0 0 0; opacity: 0.9; font-style: italic; }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+
+        .fechas-banner {
+            background: var(--verde);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: -30px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .fecha-item span { display: block; font-size: 0.85rem; text-transform: uppercase; }
+        .fecha-item strong { font-size: 1.3rem; }
+
+        h2.section-title { 
+            color: var(--verde); 
+            text-align: left; 
+            margin-top: 3.5rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        /* 2. QUIÉNES PARTICIPAN */
+        .info-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            border-left: 5px solid var(--verde);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            margin: 1.5rem 0;
+        }
+
+        /* 3. FOCOS */
+        .focos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .foco-item {
+            background: #fff;
+            padding: 1.2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #eee;
+            font-weight: bold;
+        }
+
+        /* 6. ACOMPAÑAMIENTO */
+        .validacion-box {
+            background: #fdfae6;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #f1c40f;
+            margin: 1.5rem 0;
+        }
+
+        /* 7. PREMIOS */
+        .premios-destacado {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin: 1.5rem 0;
+        }
+        .p-cabecera { background: var(--cafe); color: white; padding: 1rem; text-align: center; font-weight: bold; }
+        .p-cuerpo { padding: 1.5rem; }
+        .p-item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee; }
+        .monto { font-weight: bold; color: var(--verde); }
+
+        /* 8. COMO PARTICIPAR (CTA) */
+        .final-cta {
+            background: #eef5df;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 4rem;
+            border: 2px dashed var(--verde);
+        }
+        .btn-final {
+            background-color: var(--verde);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.4rem;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn-final:hover { background: var(--cafe); transform: scale(1.03); }
+
+        footer { background: var(--cafe); color: white; text-align: center; padding: 2.5rem 1rem; margin-top: 4rem; }
+
+        @media (max-width: 600px) {
+            .fechas-banner { flex-direction: column; gap: 1rem; margin-top: 0; }
+            header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="SIN FONDO.png" alt="Pacific Nut Logo" class="logo">
+    </nav>
+
+    <header>
+        <h1>CONCURSO DE INNOVACIÓN</h1>
+        <p>¡Tu ingenio es el motor de nuestra empresa!</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="fechas-banner">
+            <div class="fecha-item">
+                <span>Comienza el:</span>
+                <strong>Miércoles 10 de Junio</strong>
+            </div>
+            <div style="font-size: 1.5rem; opacity: 0.5;">➔</div>
+            <div class="fecha-item">
+                <span>Tienes hasta el:</span>
+                <strong>Viernes 28 de Junio</strong>
+            </div>
+        </section>
+
+        <h2 class="section-title">¿Quiénes pueden participar?</h2>
+        <div class="info-box">
+            <p>¡Todos los colaboradores están invitados! Puedes participar de forma <strong>individual o en equipo</strong> (máximo 3 personas). Cada colaborador puede enviar un <strong>máximo de 3 ideas</strong>.</p>
+        </div>
+
+        <h2 class="section-title">Áreas de Innovación (Focos)</h2>
+        <div class="focos-grid">
+            <div class="foco-item">⚙️ Eficiencia de procesos</div>
+            <div class="foco-item">💎 Calidad de producto</div>
+            <div class="foco-item">💻 Transformación Digital</div>
+            <div class="foco-item">🤝 Servicio Interno / Externo</div>
+            <div class="foco-item">🌱 Sinergias Empresas Sutil</div>
+        </div>
+
+        <h2 class="section-title">Selección de Ideas</h2>
+        <div class="info-box">
+            <p>Seleccionaremos un <strong>máximo de 10 ideas</strong> que estén alineadas a los focos de innovación mencionados anteriormente.</p>
+        </div>
+
+        <h2 class="section-title">Evaluación y Feedback</h2>
+        <div class="info-box">
+            <p>Tras el cierre (28 de junio), evaluaremos durante 3 semanas. Comunicaremos por correo electrónico a todos los participantes si su idea fue seleccionada.</p>
+            <p><strong>Feedback transparente:</strong> En caso de no ser seleccionada, explicaremos el por qué. También celebraremos y comunicaremos públicamente todas las ideas seleccionadas.</p>
+        </div>
+
+        <h2 class="section-title">¿Qué pasa si mi idea es seleccionada?</h2>
+        <div class="validacion-box">
+            <strong>Acompañamiento y Mejora:</strong>
+            <p>Te acompañaremos en un proceso de desarrollo y validación junto a un miembro del comité para analizar si es factible y realizable.</p>
+            <p>⏳ <strong>¿Cuánto tiempo toma?</strong> Dependerá de la idea; algunas pueden tomar semanas y otras varios meses de prueba.</p>
+        </div>
+
+        <h2 class="section-title">Premios</h2>
+        <div class="premios-destacado">
+            <div class="p-cabecera">TOP 10 IDEAS SELECCIONADAS</div>
+            <div class="p-cuerpo">
+                <div class="p-item"><span>Giftcard + Diploma de reconocimiento</span> <span class="monto">$50.000</span></div>
+            </div>
+            <div class="p-cabecera">3 MEJORES IDEAS FINALISTAS</div>
+            <div class="p-cuerpo">
+                <div class="p-item"><span>🥇 Primer Lugar</span> <span class="monto">$300.000 + Diploma</span></div>
+                <div class="p-item"><span>🥈 Segundo Lugar</span> <span class="monto">$200.000 + Diploma</span></div>
+                <div class="p-item"><span>🥉 Tercer Lugar</span> <span class="monto">$150.000 + Diploma</span></div>
+            </div>
+        </div>
+
+        <section class="final-cta">
+            <h2 style="margin-top:0; color: var(--cafe);">¿Cómo participar?</h2>
+            <p>Escanea el QR de tu invitación o haz clic en el siguiente botón:</p>
+            <br>
+            <a href="https://forms.gle/osZyeH2ZJSaNXChy6" class="btn-final" target="_blank">¡POSTULAR MI IDEA AQUÍ!</a>
+            <br><br>
+            <div style="border-top: 1px solid #d4e3b5; padding-top: 1rem;">
+                <p><strong>Buzón físico:</strong> También podrás enviarla por escrito. Dispondremos de un formato especial en planta para que sea rellenado siguiendo los pasos indicados.</p>
+            </div>
+        </section>
+
+        <h2 class="section-title">¿Tienes dudas?</h2>
+        <div class="info-box">
+            <p>Escríbenos a: <strong>innovacion@pacificnut.com</strong></p>
+            <p>O consulta directamente a los miembros del <strong>Comité</strong> o a los <strong>Embajadores de Innovación</strong>.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Comité de Innovación - Pacific Nut & Dried Fruits</p>
+        <p>© 2026 - ¡Tu idea puede cambiar el futuro!</p>
+    </footer>
+
+</body>
+</html>
